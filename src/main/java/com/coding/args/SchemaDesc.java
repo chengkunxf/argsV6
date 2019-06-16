@@ -26,7 +26,6 @@ public class SchemaDesc {
 
     public Object getDefaultValue(String flag) {
         String type = getType(flag);
-
         if(!defaultValueMap.containsKey(type)){
             throw new IllegalArgumentException(String.format("This %s type is not support.", type));
         }
